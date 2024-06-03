@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learning Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <script src="./bootstrap/jquery.min.js"></script>
+  <script src="./bootstrap/bootstrap.min.js"></script>  
+  <link rel="stylesheet" type="text/css" href="./styles.css"  />
+  <script>
+    $(".btn-group, .dropdown").hover(
+    function () {
+        $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+        $(this).addClass('open');
+    },
+    function () {
+        $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+        $(this).removeClass('open');
+    });
+</script>
+</head>
+<body>
+
+<nav class="navbar custom-blue">
+  <div class="container-fluid">
+    <div class="navbar-header custom-nav-header">
+      <a class="navbar-brand" href="#">Learning Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="custom-list-item"><a href="index.html">Home</a></li>
+      <li class="custom-list-item"><a href="aboutus.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+        <ul class="dropdown-menu multi-level custom-blue ">
+          <li  class="dropdown-submenu">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> Web Development </a>
+            <ul class="dropdown-menu custom-blue">
+                <li><a href="angular.html">Angular</a></li>   
+                <li><a href="#">React</a></li>   
+                <li><a href="#">Vue.js</a></li>   
+            </ul>
+          </li> 
+          <li  class="dropdown-submenu">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> Backend </a>
+            <ul class="dropdown-menu custom-blue ">
+              <li><a href="#">Java</a></li>   
+              <li><a href="#">Node</a></li>   
+              <li><a href="#">.net</a></li>
+            </ul>
+          </li>  
+          <li  class="dropdown-submenu">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> DataBase</a>
+            <ul class="dropdown-menu custom-blue ">
+              <li><a href="#">Mysql</a></li>   
+              <li><a href="#">MongoDB</a></li>   
+              <li><a href="#">Cassandra</a></li>   
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="custom-list-item" ><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2">
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+    <h1 class="mt-5 mb-4 text-center">About Us</h1>
+    <p>Welcome to <b>Learning Portal </b>, your ultimate destination for online learning! 
+    We are passionate about education and committed to providing a platform where learners of all 
+    ages and backgrounds can thrive.</p>
+    <hr/>
+    <em>At our Learning Portal, we believe that education should be accessible to everyone, regardless of 
+    their geographical location or financial status. Our mission is to break down barriers to education and empower 
+    individuals to reach their full potential.</em>
+    <hr/>
+    <p>Whether you're a student looking to supplement your studies, a professional seeking to expand your skillset, or 
+    someone simply curious to learn something new, our Learning Portal has something for you. From comprehensive courses
+    taught by industry experts to interactive learning resources, we offer a diverse range of content to cater to your 
+    learning needs.</p>
+    <p>Our team is comprised of dedicated educators, instructional designers, and technology experts who are passionate 
+    about creating engaging and effective learning experiences. We leverage the latest advancements in technology to 
+    deliver innovative and interactive learning solutions that keep pace with the evolving needs of learners.</p>
+    <p>Join us on a journey of discovery and lifelong learning. Together, let's unlock the doors to knowledge and 
+    unleash your potential!</p>
+    </div>
+    <div class="col-sm-2">
+      
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center custom-blue">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-4 ">
+      <h4>Follow Us:</h4>
+        <ul class="list-unstyled">
+          <li><a href="" class="text-white">Facebook</a></li>
+          <li><a href="" class="text-white">Instagram</a></li>
+          <li><a href="" class="text-white">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-4 col-4">
+      <h4>Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="aboutus.html" class="text-white">About</a></li>
+          <li><a href="contactus.html" class="text-white">Contact</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-4 col-4">
+      <h4>Contact Us</h4>
+        <ul class="list-unstyled">
+          <li>123 Main Street</li>
+          <li>City, State, 12345</li>
+          <li>Email: career@learning.com</li>
+          <li>Phone: +91-81307-78901</li>
+        </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

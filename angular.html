@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learning Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <script src="./bootstrap/jquery.min.js"></script>
+  <script src="./bootstrap/bootstrap.min.js"></script>  
+  <link rel="stylesheet" type="text/css" href="./styles.css"  />
+  <script>
+    $(".btn-group, .dropdown").hover(
+    function () {
+        $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+        $(this).addClass('open');
+    },
+    function () {
+        $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+        $(this).removeClass('open');
+    });
+</script>
+</head>
+<body>
+
+<nav class="navbar custom-blue">
+  <div class="container-fluid">
+    <div class="navbar-header custom-nav-header">
+      <a class="navbar-brand" href="#">Learning Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="custom-list-item"><a href="index.html">Home</a></li>
+      <li class="custom-list-item"><a href="aboutus.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+        <ul class="dropdown-menu multi-level custom-blue ">
+          <li  class="dropdown-submenu">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> Web Development </a>
+            <ul class="dropdown-menu custom-blue">
+                <li><a href="angular.html">Angular</a></li>   
+                <li><a href="#">React</a></li>   
+                <li><a href="#">Vue.js</a></li>   
+            </ul>
+          </li> 
+          <li  class="dropdown-submenu">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> Backend </a>
+            <ul class="dropdown-menu custom-blue ">
+              <li><a href="#">Java</a></li>   
+              <li><a href="#">Node</a></li>   
+              <li><a href="#">.net</a></li>
+            </ul>
+          </li>  
+          <li  class="dropdown-submenu">
+            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> DataBase</a>
+            <ul class="dropdown-menu custom-blue ">
+              <li><a href="#">Mysql</a></li>   
+              <li><a href="#">MongoDB</a></li>   
+              <li><a href="#">Cassandra</a></li>   
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="custom-list-item" ><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2">
+      
+    </div>
+    <div class="col-sm-8 text-left"> 
+        <h2 class="text-center">Angular</h2>           
+        <h4 class="text-heading" > <u>What is Angular?</u></h4>
+          <p class="text-para">Angular is a platform and framework for building client applications in HTML, CSS, and JavaScript/TypeScript.</p>
+          <p class="text-para">It's maintained by Google and a community of individuals and corporations.</p>
+        <h4 class="text-heading"><u>Why Angular?</u></h4>
+          <p class="text-para">Angular provides a structured way to build dynamic web applications with features like two-way data binding, dependency injection, and modular development.</p>
+          <p class="text-para">It's widely used for building single-page applications (SPAs) and large-scale enterprise applications.</p>
+        <h4 class="text-heading"><u>Resources</u></h4>
+          <div class="table-responsive" >
+            <table id="example" class="table table-striped 
+            table-bordered table-hover text-para" style="width:100%">
+              <thead class="thead-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Topic Name</th>
+                  <th>Detail</th>
+                  <th>Video link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Introduction</td>
+                  <td>Introduction to Angular</td>
+                  <td>
+                    <a class="a-link" href="https://www.youtube.com/watch?v=0eWrpsCLMJQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ">Youtube Link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Components</td>
+                  <td>What are Components?</td>
+                  <td>
+                    <a class="a-link"href="https://www.youtube.com/watch?v=16rQyEQtpyQ&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=4">Youtube Link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Interpolation</td>
+                  <td>What is Interpolation?</td>
+                  <td>
+                    <a class="a-link" href="https://www.youtube.com/watch?v=2a6OfacW_-I&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=5">Youtube Link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Two Way Binding</td>
+                  <td>Two way binding explained </td>
+                  <td>
+                    <a class="a-link" href="https://www.youtube.com/watch?v=DOWwWsbG1Sw&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=11">Youtube Link</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Services</td>
+                  <td>Introduction to Services</td>
+                  <td>
+                    <a class="a-link" href="https://www.youtube.com/watch?v=pwuGBvOPFYI&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=17">Youtube Link</a>
+                  </td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+      </div> 
+    </div>
+    <div class="col-sm-2">
+      
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center custom-blue">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-4 ">
+      <h4>Follow Us:</h4>
+        <ul class="list-unstyled">
+          <li><a href="" class="text-white">Facebook</a></li>
+          <li><a href="" class="text-white">Instagram</a></li>
+          <li><a href="" class="text-white">Twitter</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-4 col-4">
+      <h4>Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="aboutus.html" class="text-white">About</a></li>
+          <li><a href="contactus.html" class="text-white">Contact</a></li>
+        </ul>
+    </div>
+    <div class="col-lg-4 col-md-4 col-4">
+      <h4>Contact Us</h4>
+        <ul class="list-unstyled">
+          <li>123 Main Street</li>
+          <li>City, State, 12345</li>
+          <li>Email: career@learning.com</li>
+          <li>Phone: +91-81307-78901</li>
+        </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
