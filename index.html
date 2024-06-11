@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Learning Portal</title>
+  <title>E-Shop</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-  <script src="./bootstrap/jquery.min.js"></script>
-  <script src="./bootstrap/bootstrap.min.js"></script>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./styles.css"  />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >  
   <script>
     $(".btn-group, .dropdown").hover(
     function () {
@@ -21,97 +22,59 @@
 </script>
 </head>
 <body>
-
 <nav class="navbar custom-blue">
   <div class="container-fluid">
-    <div class="navbar-header custom-nav-header">
-      <a class="navbar-brand" href="#">Learning Portal</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">E-Shop</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="custom-list-item"><a href="index.html">Home</a></li>
-      <li class="custom-list-item"><a href="aboutus.html">About Us</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
-        <ul class="dropdown-menu multi-level custom-blue ">
-          <li  class="dropdown-submenu">
-            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> Web Development </a>
-            <ul class="dropdown-menu custom-blue">
-                <li><a href="angular.html">Angular</a></li>   
-                <li><a href="#">React</a></li>   
-                <li><a href="#">Vue.js</a></li>   
-            </ul>
-          </li> 
-          <li  class="dropdown-submenu">
-            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> Backend </a>
-            <ul class="dropdown-menu custom-blue ">
-              <li><a href="#">Java</a></li>   
-              <li><a href="#">Node</a></li>   
-              <li><a href="#">.net</a></li>
-            </ul>
-          </li>  
-          <li  class="dropdown-submenu">
-            <a  href="#" class="dropdown-toggle" data-toggle="dropdown"> DataBase</a>
-            <ul class="dropdown-menu custom-blue ">
-              <li><a href="#">Mysql</a></li>   
-              <li><a href="#">MongoDB</a></li>   
-              <li><a href="#">Cassandra</a></li>   
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li class="custom-list-item" ><a href="contactus.html">Contact Us</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <a href="#"class="btn btn-primary custom-button" role="button">Sign-Up</a>
-      <a href="#"class="btn btn-primary custom-button" role="button">Login</a>
-    </ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Masters<b class="caret"></b></a>
+          <ul class="dropdown-menu multi-level custom-blue ">
+            <li  class="dropdown-item">
+              <a  href="category.html" class="dropdown-toggle"> Category </a>
+            </li> 
+            <li  class="dropdown-item">
+              <a  href="producttype.html" class="dropdown-toggle">Product-Type </a>
+            </li> 
+            <li  class="dropdown-item">
+              <a  href="product.html" class="dropdown-toggle"> Product </a>
+            </li> 
+          </ul>  
+        </li>    
+        <li class="custom-list-item" ><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
   </div>
-</nav>
-
+</nav> 
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-2">
-      
+    <div class="col-sm-2 ">
+
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1 class="text-center">Welcome to Learning Portal</h1>
-      <p>At Learning Portal, we believe that learning should be accessible, engaging, and tailored to your unique journey. Whether you're a student, professional, or lifelong learner, our platform is designed to empower you with knowledge and skills that fuel your personal and professional growth.</p>
+      <h1 class="text-center">Welcome to E-Shop</h1>
     </div>
     <div class="col-sm-2">
       
     </div>
+    <hr>
+  
   </div>
 </div>
-
-<footer class="container-fluid text-center custom-blue">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-4 ">
-      <h4>Follow Us:</h4>
-        <ul class="list-unstyled">
-          <li><a href="" class="text-white">Facebook</a></li>
-          <li><a href="" class="text-white">Instagram</a></li>
-          <li><a href="" class="text-white">Twitter</a></li>
-        </ul>
-    </div>
-    <div class="col-lg-4 col-md-4 col-4">
-      <h4>Quick Links</h4>
-        <ul class="list-unstyled">
-          <li><a href="index.html" class="text-white">Home</a></li>
-          <li><a href="aboutus.html" class="text-white">About</a></li>
-          <li><a href="contactus.html" class="text-white">Contact</a></li>
-        </ul>
-    </div>
-    <div class="col-lg-4 col-md-4 col-4">
-      <h4>Contact Us</h4>
-        <ul class="list-unstyled">
-          <li>123 Main Street</li>
-          <li>City, State, 12345</li>
-          <li>Email: career@learning.com</li>
-          <li>Phone: +91-81307-78901</li>
-        </ul>
-    </div>
-  </div>
+<footer class="container-fluid text-center">
+  <p class="text-center"> © Copyright 2021 - Company Name.  All rights reserved. </p>   
 </footer>
-
 </body>
 </html>
